@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banner Section</title>
+    <!-- Google Font CDN -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                        'bike-primary': '#E76F51',
+                        'bike-bg': 'rgba(231, 111, 81, 0.1)',
+                        'name-title': 'rgba(35, 166, 240, 1)',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .font-poppins {
+            font-family: "Poppins", serif;
+        }
+    </style>
+
+
+
+</head>
+
+<body class="bg-gray-900 text-white">
+    <!-- header section -->
+    <header>
+        <nav class="bg-gray-900 text-white py-4">
+            <div class="container mx-auto flex justify-between items-center px-6">
+                <!-- Logo or Brand Name -->
+                <div class="text-xl font-bold">
+                    My Portfolio
+                </div>
+
+                <!-- Hamburger Menu for Mobile -->
+                <div class="block lg:hidden">
+                    <button id="menu-toggle" class="text-white focus:outline-none">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16m-7 6h7"></path>
+                        </svg>
+                    </button>
+                </div>
+
+                <!-- Menu Items -->
+                <ul id="menu" class="hidden lg:flex lg:space-x-8">
+                    <li><a href="#" class="hover:text-purple-500 transition duration-300">Home</a></li>
+                    <li><a href="#" class="hover:text-purple-500 transition duration-300">Services</a></li>
+                    <li><a href="#" class="hover:text-purple-500 transition duration-300">Pricing</a></li>
+                    <li><a href="#" class="hover:text-purple-500 transition duration-300">Portfolios</a></li>
+                    <li><a href="#" class="hover:text-purple-500 transition duration-300">About Me</a></li>
+                    <li><a href="#" class="hover:text-purple-500 transition duration-300">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- banner section -->
+        <section class="container mx-auto flex flex-col lg:flex-row items-center justify-between py-20 px-10">
+            <!-- Left Content -->
+            <div class="max-w-xl text-center lg:text-left">
+                <p class="text-sm uppercase tracking-widest text-gray-400">Welcome to my world</p>
+                <h1 class="text-5xl font-bold mt-3">
+                    Hi, I'm <span class="text-red-500">Sujon Shekh</span> <br> a Digital Marketer.
+                </h1>
+                <p class="text-gray-400 mt-4">
+                    I use animation as a third dimension by which to simplify experiences and guiding
+                    through each and every interaction. I’m not adding motion just to spruce things up,
+                    but doing it in ways that matter.
+                </p>
+
+                <!-- Social Media Icons -->
+                <div
+                    class="flex flex-col lg:flex-row items-center lg:items-start space-y-6 lg:space-y-0 lg:space-x-8 mt-6">
+                    <div>
+                        <p class="text-gray-400 mb-2">Find with me</p>
+                        <div class="flex space-x-3">
+                            <a href="#" class="p-3 bg-gray-800 rounded-lg hover:bg-red-500 transition duration-300">
+                                <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" class="w-6 h-6"
+                                    alt="Facebook">
+                            </a>
+                            <a href="#" class="p-3 bg-gray-800 rounded-lg hover:bg-red-500 transition duration-300">
+                                <img src="https://cdn-icons-png.flaticon.com/512/733/733579.png" class="w-6 h-6"
+                                    alt="Twitter">
+                            </a>
+                            <a href="#" class="p-3 bg-gray-800 rounded-lg hover:bg-red-500 transition duration-300">
+                                <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" class="w-6 h-6"
+                                    alt="LinkedIn">
+                            </a>
+                        </div>
+                    </div>
+
+                    <div>
+                        <p class="text-gray-400 mb-2">Best Skill On</p>
+                        <div class="flex space-x-3">
+                            <a href="#" class="p-3 bg-gray-800 rounded-lg hover:bg-red-500 transition duration-300">
+                                <img src="https://cdn-icons-png.flaticon.com/512/888/888859.png" class="w-6 h-6"
+                                    alt="Figma">
+                            </a>
+                            <a href="#" class="p-3 bg-gray-800 rounded-lg hover:bg-red-500 transition duration-300">
+                                <img src="https://cdn-icons-png.flaticon.com/512/5968/5968705.png" class="w-6 h-6"
+                                    alt="Photoshop">
+                            </a>
+                            <a href="#" class="p-3 bg-gray-800 rounded-lg hover:bg-red-500 transition duration-300">
+                                <img src="https://cdn-icons-png.flaticon.com/512/2111/2111774.png" class="w-6 h-6"
+                                    alt="Sketch">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Image -->
+            <div class="w-full lg:w-1/2 flex justify-center mt-10 lg:mt-0">
+                <div class="relative bg-gray-800 rounded-2xl p-4">
+                    <img src="./images/sujon1.png" alt="Profile Image" class="rounded-xl">
+                </div>
+            </div>
+        </section>
+    </header>
+
+    <main>
+        <!-- services section -->
+        <section class="container mx-auto py-20 px-10 bg-gray-900">
+            <h2 class="font-bold text-5xl text-center mb-2 font-poppins">What I Do</h2>
+            <p class="text-gray-400 text-center mb-12">Explore my services and expertise</p>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Service Card 1 -->
+                <div class="bg-gray-800 p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+                    <h3 class="text-xl font-semibold mb-4 text-white">Business Strategy</h3>
+                    <p class="text-gray-400">I throw myself down among the tall grass by the stream as life close to the
+                        earth.</p>
+                </div>
+
+                <!-- Service Card 2 -->
+                <div class="bg-gray-800 p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+                    <h3 class="text-xl font-semibold mb-4 text-white">Mobile App</h3>
+                    <p class="text-gray-400">Using our expertise in mobile application development to create beautiful
+                        pixel-perfect designs.</p>
+                </div>
+
+                <!-- Service Card 3 -->
+                <div class="bg-gray-800 p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+                    <h3 class="text-xl font-semibold mb-4 text-white">App Development</h3>
+                    <p class="text-gray-400">We'll handle everything from to app development process until it is time to
+                        make your project live.</p>
+                </div>
+
+                <!-- Service Card 4 -->
+                <div class="bg-gray-800 p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+                    <h3 class="text-xl font-semibold mb-4 text-white">SEO Optimisation</h3>
+                    <p class="text-gray-400">Your website creating matters. Our SEO services will help you get to the
+                        top of
+                        the ranks and stay there!</p>
+                </div>
+
+                <!-- Service Card 5 -->
+                <div class="bg-gray-800 p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+                    <h3 class="text-xl font-semibold mb-4 text-white">Business Strategy</h3>
+                    <p class="text-gray-400">We'll help you optimise your business processes to maximise profitability
+                        and
+                        eliminate unnecessary costs.</p>
+                </div>
+
+                <!-- Service Card 6 -->
+                <div class="bg-gray-800 p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+                    <h3 class="text-xl font-semibold mb-4 text-white">UK Consulting</h3>
+                    <p class="text-gray-400">A UK consultant is responsible for many of the same tasks as a UK designer,
+                        but
+                        they typically.</p>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- Resume Section -->
+
+        <section class="container mx-auto py-20 px-10 bg-gray-900 text-white">
+            <!-- Flex Container for Education and Experience -->
+            <h1 class="font-bold text-5xl text-center mb-16 font-poppins">My Resume</h1>
+            <div class="flex flex-col lg:flex-row gap-8">
+                <!-- Education Section -->
+                <div class="flex-1 bg-gray-800 p-8 rounded-lg shadow-lg">
+                    <h2 class="text-3xl font-bold mb-8">Education</h2>
+                    <hr>
+
+                    <!-- Education Item 1 -->
+                    <div class="my-5">
+                        <h3 class="text-xl font-semibold mb-3">Bachelor of Business Studies (BBS)</h3>
+                        <p class="text-gray-400 text-sm mb-3">2020 - Present</p>
+                        <p class="text-gray-400">
+                            Currently pursuing a BBS degree to strengthen my expertise in business management and
+                            strategic
+                            planning.
+                        </p>
+                    </div>
+                    <hr>
+                    <!-- Education Item 2 -->
+                    <div class="my-5">
+                        <h3 class="text-xl font-semibold mb-1">Higher Secondary Certificate (HSC)</h3>
+                        <p class="text-gray-400 text-sm mb-3">2016 - 2018</p>
+                        <p class="text-gray-400">
+                            Successfully completed HSC in the Business Studies group, gaining a foundational
+                            understanding
+                            of business concepts and practices.
+                        </p>
+                    </div>
+                    <hr>
+                    <!-- Education Item 3 -->
+                    <div class="my-5">
+                        <h3 class="text-xl font-semibold mb-1">Secondary School Certificate (SSC)</h3>
+                        <p class="text-gray-400 text-sm mb-3">2014 - 2016</p>
+                        <p class="text-gray-400">
+                            Initiated my digital marketing career during my secondary education, acquiring hands-on
+                            experience and practical skills from an early stage.
+                        </p>
+                    </div>
+                </div>
+                <hr>
+                <!-- Experience Section -->
+                <div class="flex-1 bg-gray-800 p-8 rounded-lg shadow-lg">
+                    <h2 class="text-3xl font-bold mb-8">Experience</h2>
+                    <hr>
+                    <!-- Experience Item 1 -->
+                    <div class="my-5">
+                        <h3 class="text-xl font-semibold mb-1">Trainer & Senior Digital Marketer</h3>
+                        <p class="text-gray-400 text-sm mb-3">2020 - 2024</p>
+                        <p class="text-gray-400">
+                            Trainer and Senior Digital Marketer with expertise in SSA, SMA, Sharply, and Web Analytics,
+                            dedicated to driving results and empowering others through impactful training.
+                        </p>
+                    </div>
+                    <hr>
+                    <!-- Experience Item 2 -->
+                    <div class="my-5">
+                        <h3 class="text-xl font-semibold mb-1">Social Media Marketing Expert</h3>
+                        <p class="text-gray-400 text-sm mb-3">2015 - 2024</p>
+                        <p class="text-gray-400">
+                            Specialized in Social Media Marketing (SMM), creating impactful strategies to boost brand
+                            awareness, engagement, and connections across all major platforms.
+                        </p>
+                    </div>
+                    <hr>
+                    <!-- Experience Item 3 -->
+                    <div class="my-5">
+                        <h3 class="text-xl font-semibold mb-1">Search Engine Marketing Expert</h3>
+                        <p class="text-gray-400 text-sm mb-3">2016 - 2024</p>
+                        <p class="text-gray-400">
+                            Expert in Search Engine Marketing (SEM), delivering data-driven ad campaigns to maximise
+                            visibility, drive targeted traffic, and achieve measurable ROI.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pricing Plan Section -->
+        <section class="container mx-auto py-20 px-10 bg-gray-900 text-white">
+            <h1 class="font-bold text-5xl text-center mb-16 font-poppins">My Pricing Plan</h1>
+            <!-- Flex Container for Pricing Cards -->
+            <div class="flex flex-col lg:flex-row gap-8 justify-center">
+                <!-- Pricing Card 1: Facebook Ads -->
+                <div class="flex-1 bg-gradient-to-br from-purple-600 to-blue-600 rounded-lg shadow-lg overflow-hidden">
+                    <!-- Header Section -->
+                    <div class="bg-black bg-opacity-20 p-6 text-center">
+                        <h3 class="text-2xl font-bold mb-2">$200 / Month</h3>
+                        <h4 class="text-xl font-semibold">Facebook Ads</h4>
+                    </div>
+                    <!-- Body Section -->
+                    <div class="p-8">
+                        <ul class="text-gray-200 mb-8">
+                            <li class="mb-3">- Facebook Ads Setup</li>
+                            <li class="mb-3">- Audience Research</li>
+                            <li class="mb-3">- In Depth Audience Targeting</li>
+                            <li class="mb-3">- Attractive Primary Text</li>
+                            <li class="mb-3">- Conversion Tracking Setup</li>
+                            <li class="mb-3">- Plan and Strategy</li>
+                            <li class="mb-3">- Custom Audience</li>
+                            <li class="mb-3">- Lookalike Audience</li>
+                            <li class="mb-3">- Remarketing</li>
+                            <li class="mb-3">- Ads Manage & Optimize</li>
+                        </ul>
+                        <button
+                            class="w-full bg-white text-purple-600 py-3 rounded-lg font-semibold hover:bg-gray-100 transition duration-300">
+                            Order Now
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Pricing Card 2: Google Ads -->
+                <div class="flex-1 bg-gradient-to-br from-green-600 to-blue-600 rounded-lg shadow-lg overflow-hidden">
+                    <!-- Header Section -->
+                    <div class="bg-black bg-opacity-20 p-6 text-center">
+                        <h3 class="text-2xl font-bold mb-2">$200 / Month</h3>
+                        <h4 class="text-xl font-semibold">Google Ads</h4>
+                    </div>
+                    <!-- Body Section -->
+                    <div class="p-8">
+                        <ul class="text-gray-200 mb-8">
+                            <li class="mb-3">- Google Ad Account Create</li>
+                            <li class="mb-3">- Keywords Research</li>
+                            <li class="mb-3">- Ads Setup & Development</li>
+                            <li class="mb-3">- Conversion Tracking Setup</li>
+                            <li class="mb-3">- Plan and Strategy</li>
+                            <li class="mb-3">- Negative Keywords</li>
+                            <li class="mb-3">- Ad extensions</li>
+                            <li class="mb-3">- Remarketing</li>
+                            <li class="mb-3">- Smart Search Campaign</li>
+                            <li class="mb-3">- Smart Shopping Campaign</li>
+                        </ul>
+                        <button
+                            class="w-full bg-white text-green-600 py-3 rounded-lg font-semibold hover:bg-gray-100 transition duration-300">
+                            Order Now
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Pricing Card 3: GA4-Analytics -->
+                <div class="flex-1 bg-gradient-to-br from-orange-600 to-red-600 rounded-lg shadow-lg overflow-hidden">
+                    <!-- Header Section -->
+                    <div class="bg-black bg-opacity-20 p-6 text-center">
+                        <h3 class="text-2xl font-bold mb-2">$200 / Month</h3>
+                        <h4 class="text-xl font-semibold">GA4-Analytics</h4>
+                    </div>
+                    <!-- Body Section -->
+                    <div class="p-8">
+                        <ul class="text-gray-200 mb-8">
+                            <li class="mb-3">- (GA4) Google Analytics Setup</li>
+                            <li class="mb-3">- Google Tag Manager Setup</li>
+                            <li class="mb-3">- Enable Data Layer</li>
+                            <li class="mb-3">- Google Ads Conversion Tracking</li>
+                            <li class="mb-3">- Conversion Tracking Setup</li>
+                            <li class="mb-3">- GA4 EEC Tracking</li>
+                            <li class="mb-3">- GA4 Server Side Tracking</li>
+                            <li class="mb-3">- Dynamic Remarketing Tag</li>
+                            <li class="mb-3">- Google Signal Enable</li>
+                            <li class="mb-3">- UTM Parameters Tracking</li>
+                        </ul>
+                        <button
+                            class="w-full bg-white text-orange-600 py-3 rounded-lg font-semibold hover:bg-gray-100 transition duration-300">
+                            Order Now
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+
+    </footer>
+</body>
+
+</html>
